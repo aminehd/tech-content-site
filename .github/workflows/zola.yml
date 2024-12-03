@@ -10,7 +10,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-
+permissions:
+  contents: write  # Allow pushing to the repository
+  pages: write     # Allow deployment to GitHub Pages
+  id-token: write  # Required for GitHub Pages deployment
 jobs:
   build:
     runs-on: ubuntu-latest
