@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/about/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/configuration/</loc>
+        <lastmod>2024-07-09</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/markdown/</loc>
+        <lastmod>2022-05-01</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/shortcode/</loc>
+        <lastmod>2024-06-14</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/project-1/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/project-2/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/project-3/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/project-4/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/project-5/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/documentation/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/example/</loc>
+    </url>
+</urlset>
