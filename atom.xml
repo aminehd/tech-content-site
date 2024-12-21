@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Amineh Dadsetan</title>
+    <subtitle>This is an example description</subtitle>
+    <link rel="self" type="application/atom+xml" href=" https://aminehd.github.io/tech-content-site/atom.xml"/>
+    <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-20T00:00:00+00:00</updated>
+    <id> https://aminehd.github.io/tech-content-site/atom.xml</id>
+    <entry xml:lang="en">
+        <title>About</title>
+        <published>2024-12-20T00:00:00+00:00</published>
+        <updated>2024-12-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/about/"/>
+        <id> https://aminehd.github.io/tech-content-site/about/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/about/">&lt;p&gt;I am a software engineer and I like teaching and simleys :).
+I am a big fan of the &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;deployment&#x2F;github-pages&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; static site generator and I am using it to build this site.
+Please help yourself with clicking around.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding Bias and Variance</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/bias-variance/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/bias-variance/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/bias-variance/">&lt;p&gt;Understanding statistical definiton of Bias and Variance&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-bias-and-variance-matter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-bias-and-variance-matter&quot; aria-label=&quot;Anchor link for: why-bias-and-variance-matter&quot;&gt;Why Bias and Variance matter?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In practical machine learn,   we would want to know if trained models are overfitting or underfitting.
+Overfitting is associated with high Variance and underfitting is associated with high Bias.
+But the use of term variance is not exactly the same as the statistical variance.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-overfitting-is-associated-with-high-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-overfitting-is-associated-with-high-variance&quot; aria-label=&quot;Anchor link for: why-overfitting-is-associated-with-high-variance&quot;&gt;Why overfitting is associated with high Variance?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Overfitting means that if we pick a different training set, we would get a different model. That is roughly what we mean by Variance.
+In more exat terms the Variance is the Variance of the predictions for y_0 = f(x_0).
+But Variance has a very specific definition in statistics. How would that relate to the above definition?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;statistic-definition-of-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistic-definition-of-variance&quot; aria-label=&quot;Anchor link for: statistic-definition-of-variance&quot;&gt;Statistic definition of variance&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In statistics variance is the average of the squared differences from the Mean of a set of number.
+This brings us to our next question. Variance over which set? Answer is over set of all possible training sets. Yeah sets of sets sounds too nerdy to me as well.
+To make this more concrete I use a 1D input feature X and sampled 1000 Y&#x27;s for that.&lt;&#x2F;p&gt;
+&lt;p&gt;On the left side you you see the whole data set X in Grey and the training set we have chosen in blue.
+On the right side you see the line that would be trained on the training set.
+The red dots is the test datapoint.
+Now you might ask why we might smaple different training sets. Why don&#x27;t we just use the whole data set?
+The answer is that we don&#x27;t know the whole data set. The wholde data set is the population and we can only have some assuption about it. For example we can assume the popluations is normally distributed.
+Doing this we can have a formula for Bias and Variance.
+$$
+E[(f(x_0) - y_0)^2] = Bias^2 + Variance + Noise
+$$
+have you ever wondered why overfitting is associated with high Variance and underfitting is associated with high Bias?&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
