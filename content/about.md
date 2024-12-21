@@ -1,6 +1,7 @@
 +++
 title = "About"
 path = "about"
+date = "2024-12-20"
 
 [taxonomies]
 tags=["ME"]
