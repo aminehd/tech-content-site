@@ -29,11 +29,15 @@ To make this more concrete I use a 1D input feature X and sampled 1000 Y's for t
 
 On the left side you you see the whole data set X in Grey and the training set we have chosen in blue. 
 On the right side you see the line that would be trained on the training set.
-The red dots is the test datapoint. 
+
+The red dots is the test datapoint for x0 = 10 and it's trained value y0. 
+
+<img src="https://raw.githubusercontent.com/aminehd/JuliaAnimationForML/main/outward_sampling_with_removal_1D.gif" alt="PCA in 3D" id="img1">
+
 Now you might ask why we might smaple different training sets. Why don't we just use the whole data set?
 The answer is that we don't know the whole data set. The wholde data set is the population and we can only have some assuption about it. For example we can assume the popluations is normally distributed.
 Doing this we can have a formula for Bias and Variance.
+
 $$
 E[(f(x_0) - y_0)^2] = Bias^2 + Variance + Noise
 $$
-have you ever wondered why overfitting is associated with high Variance and underfitting is associated with high Bias?
