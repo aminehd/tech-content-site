@@ -1,6 +1,6 @@
 +++
-title = "Understanding Bias and Variance"
-date = "2024-07-09"
+title = "Serving a website from your local computer."
+date = "2024-12-30"
 
 [taxonomies]
 tags=["documentation"]
@@ -10,34 +10,62 @@ repo_view = true
 comment = true
 +++
 
-Understanding statistical definiton of Bias and Variance
- 
- ### Why Bias and Variance matter?
-In practical machine learn,   we would want to know if trained models are overfitting or underfitting.
-Overfitting is associated with high Variance and underfitting is associated with high Bias.
-But the use of term variance is not exactly the same as the statistical variance.
+Serving a website from your local computer.
 
-### Why overfitting is associated with high Variance?
-Overfitting means that if we pick a different training set, we would get a different model. That is roughly what we mean by Variance. 
-In more exat terms the Variance is the Variance of the predictions for y_0 = f(x_0).
-But Variance has a very specific definition in statistics. How would that relate to the above definition?
+# Self Hosting? Why?
+There are tons of ways you can host a website. In fact if you never host a website in your life that is fine too as there is so many websites out there and no one is going to miss your website.
 
-### Statistic definition of variance
-In statistics variance is the average of the squared differences from the Mean of a set of number.
-This brings us to our next question. Variance over which set? Answer is over set of all possible training sets. Yeah sets of sets sounds too nerdy to me as well.
-To make this more concrete I use a 1D input feature X and sampled 1000 Y's for that. 
+But none of these means you need a reason for self hosting. Self hosting makes you feel better than whoever that is not self hosting. Thats a good enough reason for me.
 
-On the left side you you see the whole data set X in Grey and the training set we have chosen in blue. 
-On the right side you see the line that would be trained on the training set.
+# What I used for my my self hosting?
+A list of things I used for my self hosting:
+- Domain Name from namecheap
+- AWS Route 53 Hosted Zone
+- EC2 instance for reverse proxy
+- Nginx Proxy Manager
+- Tailscale
+- Portainer
+- Docker
+- Poetry
 
-The red dots is the test datapoint for x0 = 10 and it's trained value y0. 
+## Domain Name from namecheap and AWS Rout53 Hosted Zone. 
+You need a Domain Name so people can use it to load your website (i.e. something as lame as combination of your first name and your last name). Then you need a Hosted Zone where you can add DNS records to point your domain to your server.
+I used Namecheap for Domain Name and AWS Route 53 for Hosted Zone. 
 
-<img src="/outward_sampling_with_removal_1D.gif" alt="PCA in 3D" id="img1">
+This takes internet traffic from your domain name to your server. Now, your local server is not exposed to the internet. That's why you're gonna need a reverse proxy. Next section explains that.
 
-Now you might ask why we might smaple different training sets. Why don't we just use the whole data set?
-The answer is that we don't know the whole data set. The wholde data set is the population and we can only have some assuption about it. For example we can assume the popluations is normally distributed.
-Doing this we can have a formula for Bias and Variance.
+## EC2, Nginx Proxy Manager, Tailscale.
+I used EC2 instance as for reverse proxy. I needed server application that can take internet traffic and forward it to my local server. I used Nginx Proxy Manager for that. It just gets traffic and for any particular path, it forwards it to the specific IP address and port. Later on you can setup SSL certificates for your domain name usig Nginx Proxy Manager.
+It lets you decouple network setup from your simple python server. 
 
-$$
-E[(f(x_0) - y_0)^2] = Bias^2 + Variance + Noise
-$$
+Now time for exposing the local computer port to server. That is portforwarding:
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination local_ip:8080
+sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+```
+However, you cannot easily expose your local computer to the internet. You need a VPN. I used Tailscale for that. 
+```
+sudo tailscale up --auth-key=... --advertise-routes=0.0.0.0/0,::/0 --advertise-exit-node=false
+```
+
+Run  computer will make it appear as if it is on the same network as your server.
+## Portainer, Docker, and Poetry for managing the server application.
+I created a simple python server with Flask. Then I used Docker to containerize it. I used Portainer to manage the Docker containers. Portainer is a web interface for managing Docker containers. You can create containers, start, stop, and delete them. You can also see the logs of the containers. More importnatly you can compose stacks of containers. So for example you can run a database and a web server in the same stack.
+
+For Python package management I used Poetry. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. To start a new project with Poetry, you can run:
+```
+poetry new my_project
+```
+Then you can add dependencies to your project by running:
+```
+poetry add requests
+```
+And you can install the dependencies by running:
+``` 
+poetry install
+```
+Poetry also gives you commmand line tools to run your project. For example, you can run your project by running:
+```
+poetry run python my_project.py
+```
+The result of all of this is TADDAA  : www.aminehdadsetan.net
