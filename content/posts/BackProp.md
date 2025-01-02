@@ -12,7 +12,13 @@ comment = true
 
 # Backpropagation in Neural Networks
 
-If you have ever found yourself struggling to understand backpropagation, follow my questions and take a deep breath :)
+Backpropagation is a gamified version of the chain rule. The general framework is to see a complex function (neural net) as a combination of simple functions, a.k.a gates. Then calculate how change in parameters, flow through these gates all the way to the *loss function*.
+
+<img src="https://raw.githubusercontent.com/aminehd/tech-content-site/content/images/BackProp_gates.png" alt="Complex function as combination of gates" id="BackProp_gates">
+
+Backpropagation is not a single too intellectually challenging concept. It is a combination of too many concepts and frameworks. Thus not knowing any of them fully can make it hard to understand.
+
+If you have ever found yourself struggling to understand backpropagation, follow my questions below. Try to answer them. If you find them vague, read the resources I have linked. Don't get stuck on any one question. Rather try to read through and come back to the question later.
 
 - 🌟 **Do you know the difference between the Total Derivative $ df/dt $ and the Partial Derivative $ \partial f/\partial t $?**  
    $ df/dt $ accounts for all the ways in which $ f $ changes as $ t $ changes, while $ \partial f/\partial t $ only considers the direct effect of $ t $ on $ f $. For functions of a single variable, $ df/dt $ and $ \partial f/\partial t $ are essentially the same. See below example and read more on [Math StackExchange](https://math.stackexchange.com/questions/2277214/the-difference-between-frac-dfdt-and-frac-partial-f-partial-t).
