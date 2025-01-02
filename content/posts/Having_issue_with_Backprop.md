@@ -10,7 +10,7 @@ repo_view = true
 comment = true
 +++
 
-
+# Backpropagation in Neural Networks
 
 If you have ever found yourself struggling to understand backpropagation, follow my questions and take a deep breath :)
 
