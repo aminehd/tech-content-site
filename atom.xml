@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Amineh Dadsetan</title>
+    <subtitle>This is an example description</subtitle>
+    <link rel="self" type="application/atom+xml" href=" https://aminehd.github.io/tech-content-site/atom.xml"/>
+    <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-30T00:00:00+00:00</updated>
+    <id> https://aminehd.github.io/tech-content-site/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Having issue with understanding Backpropagation?</title>
+        <published>2024-12-30T00:00:00+00:00</published>
+        <updated>2024-12-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/backprop/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/backprop/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/backprop/">&lt;h1 id=&quot;backpropagation-in-neural-networks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#backpropagation-in-neural-networks&quot; aria-label=&quot;Anchor link for: backpropagation-in-neural-networks&quot;&gt;Backpropagation in Neural Networks&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Backpropagation is a gamified version of the chain rule. The general framework is to see a complex function (neural net) as a combination of simple functions, a.k.a gates. Then calculate how change in parameters, flow through these gates all the way to the &lt;em&gt;loss function&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aminehd&#x2F;tech-content-site&#x2F;main&#x2F;content&#x2F;images&#x2F;BackProp_gates.png&quot; alt=&quot;Complex function as combination of gates&quot; id=&quot;BackProp_gates&quot;&gt;
+&lt;p&gt;Backpropagation is not a single too intellectually challenging concept. It is a combination of too many concepts and frameworks. Thus not knowing any of them fully can make it hard to understand.&lt;&#x2F;p&gt;
+&lt;p&gt;If you have ever found yourself struggling to understand backpropagation, follow my questions below. Try to answer them. If you find them vague, read the resources I have linked. Don&#x27;t get stuck on any one question. Rather try to read through and come back to the question later.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🌟 &lt;strong&gt;Do you know the difference between the Total Derivative $ df&#x2F;dt $ and the Partial Derivative $ \partial f&#x2F;\partial t $?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+$ df&#x2F;dt $ accounts for all the ways in which $ f $ changes as $ t $ changes, while $ \partial f&#x2F;\partial t $ only considers the direct effect of $ t $ on $ f $. For functions of a single variable, $ df&#x2F;dt $ and $ \partial f&#x2F;\partial t $ are essentially the same. See below example and read more on &lt;a href=&quot;https:&#x2F;&#x2F;math.stackexchange.com&#x2F;questions&#x2F;2277214&#x2F;the-difference-between-frac-dfdt-and-frac-partial-f-partial-t&quot;&gt;Math StackExchange&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;For example for a function $ f(x(t), y(t), t) $:
+$$
+\frac{df}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} + \frac{\partial f}{\partial t}
+$$&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🔗 &lt;strong&gt;Have you heard of the Chain Rule?&lt;&#x2F;strong&gt;  Does chain rule apply for partial derivatives or total derivatives?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;📐 &lt;strong&gt;Do you know how to move from simple derivatives to vectorized ones?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Read about &lt;a href=&quot;https:&#x2F;&#x2F;web.stanford.edu&#x2F;class&#x2F;cs224n&#x2F;readings&#x2F;gradient-notes.pdf&quot;&gt;Vectorized Derivatives&lt;&#x2F;a&gt;. Pay close attention to the &quot;Useful Identities&quot; section.&lt;br &#x2F;&gt;
+For a matrix $ A $, vector $ x $, and scalar $ a $, we have the following identity, where $x = (x_1, ..., x_n) \in \mathbb{R}^n$ and $f(x) \in \mathbb{R}_m$:&lt;br &#x2F;&gt;
+$$
+\frac{\partial f}{\partial x} =
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_1}{\partial x_n} \
+\vdots &amp;amp; \ddots &amp;amp; \vdots \
+\frac{\partial f_m}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_m}{\partial x_n}
+\end{bmatrix}
+$$&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is $ \frac{\partial f}{\partial x} $ equal to $ \frac{df}{dx} $?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the dimension of $ \frac{\partial f}{\partial x} $?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;$\frac{\partial f}{\partial x}$ is called the Jacobian matrix. Do you know Jacobian&#x27;s matrix is a linear transformation in the space of functions? Wait what &lt;em&gt;Function Space&lt;&#x2F;em&gt;? 🤯&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;📚 &lt;strong&gt;Have you read Andrej Karpathy&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;cs231n.github.io&#x2F;optimization-2&#x2F;#intro&quot;&gt;Intuitive Understanding of Backpropagation&lt;&#x2F;a&gt;?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Have you tried to understand what he means by local gradients and backpropagation being a local process? What about staged backpropagation?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🧠 &lt;strong&gt;Do you know cool tricks to calculate complex derivatives?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+For example, how do you calculate the derivative of the sigmoid function? Here it is (though I didn’t prove it—you can!):&lt;br &#x2F;&gt;
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}}\
+\frac{d\sigma}{dx} = \sigma(x) \cdot (1 - \sigma(x))
+$$&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🧠 &lt;strong&gt;Do you want to see 5 lines of code that summerizes it?&lt;&#x2F;strong&gt;  No problem&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Forward pass
+&lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forward&lt;&#x2F;span&gt;&lt;span&gt;(a)
+&lt;&#x2F;span&gt;&lt;span&gt;y &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forward&lt;&#x2F;span&gt;&lt;span&gt;(x)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Backward pass
+&lt;&#x2F;span&gt;&lt;span&gt;dL_dy &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;... &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# gradient of loss w.r.t. final output
+&lt;&#x2F;span&gt;&lt;span&gt;dL_dx &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;backward&lt;&#x2F;span&gt;&lt;span&gt;(dL_dy) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# ∂L&#x2F;∂x = (∂L&#x2F;∂y) * (∂y&#x2F;∂x)
+&lt;&#x2F;span&gt;&lt;span&gt;dL_da &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;backward&lt;&#x2F;span&gt;&lt;span&gt;(dL_dx) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# ∂L&#x2F;∂a = (∂L&#x2F;∂x) * (∂x&#x2F;∂a)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Serving a website from your local computer.</title>
+        <published>2024-12-30T00:00:00+00:00</published>
+        <updated>2024-12-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/self-hosting/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/self-hosting/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/self-hosting/">&lt;p&gt;Serving a website from your local computer.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;self-hosting-why&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#self-hosting-why&quot; aria-label=&quot;Anchor link for: self-hosting-why&quot;&gt;Self Hosting? Why?&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;There are tons of ways you can host a website. In fact if you never host a website in your life that is fine too as there is so many websites out there and no one is going to miss your website.&lt;&#x2F;p&gt;
+&lt;p&gt;But none of these means you need a reason for self hosting. Self hosting makes you feel better than whoever that is not self hosting. Thats a good enough reason for me.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;what-i-used-for-my-my-self-hosting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-i-used-for-my-my-self-hosting&quot; aria-label=&quot;Anchor link for: what-i-used-for-my-my-self-hosting&quot;&gt;What I used for my my self hosting?&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;A list of things I used for my self hosting:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain Name from namecheap&lt;&#x2F;li&gt;
+&lt;li&gt;AWS Route 53 Hosted Zone&lt;&#x2F;li&gt;
+&lt;li&gt;EC2 instance for reverse proxy&lt;&#x2F;li&gt;
+&lt;li&gt;Nginx Proxy Manager&lt;&#x2F;li&gt;
+&lt;li&gt;Tailscale&lt;&#x2F;li&gt;
+&lt;li&gt;Portainer&lt;&#x2F;li&gt;
+&lt;li&gt;Docker&lt;&#x2F;li&gt;
+&lt;li&gt;Poetry&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot; aria-label=&quot;Anchor link for: domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot;&gt;Domain Name from namecheap and AWS Rout53 Hosted Zone.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;You need a Domain Name so people can use it to load your website (i.e. something as lame as combination of your first name and your last name). Then you need a Hosted Zone where you can add DNS records to point your domain to your server.
+I used Namecheap for Domain Name and AWS Route 53 for Hosted Zone.&lt;&#x2F;p&gt;
+&lt;p&gt;This takes internet traffic from your domain name to your server. Now, your local server is not exposed to the internet. That&#x27;s why you&#x27;re gonna need a reverse proxy. Next section explains that.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ec2-nginx-proxy-manager-tailscale&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ec2-nginx-proxy-manager-tailscale&quot; aria-label=&quot;Anchor link for: ec2-nginx-proxy-manager-tailscale&quot;&gt;EC2, Nginx Proxy Manager, Tailscale.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I used EC2 instance as for reverse proxy. I needed server application that can take internet traffic and forward it to my local server. I used Nginx Proxy Manager for that. It just gets traffic and for any particular path, it forwards it to the specific IP address and port. Later on you can setup SSL certificates for your domain name usig Nginx Proxy Manager.
+It lets you decouple network setup from your simple python server.&lt;&#x2F;p&gt;
+&lt;p&gt;Now time for exposing the local computer port to server. That is portforwarding:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination local_ip:8080
+&lt;&#x2F;span&gt;&lt;span&gt;sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;However, you cannot easily expose your local computer to the internet. You need a VPN. I used Tailscale for that.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo tailscale up --auth-key=... --advertise-routes=0.0.0.0&#x2F;0,::&#x2F;0 --advertise-exit-node=false
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Run  computer will make it appear as if it is on the same network as your server.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;portainer-docker-and-poetry-for-managing-the-server-application&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#portainer-docker-and-poetry-for-managing-the-server-application&quot; aria-label=&quot;Anchor link for: portainer-docker-and-poetry-for-managing-the-server-application&quot;&gt;Portainer, Docker, and Poetry for managing the server application.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I created a simple python server with Flask. Then I used Docker to containerize it. I used Portainer to manage the Docker containers. Portainer is a web interface for managing Docker containers. You can create containers, start, stop, and delete them. You can also see the logs of the containers. More importnatly you can compose stacks of containers. So for example you can run a database and a web server in the same stack.&lt;&#x2F;p&gt;
+&lt;p&gt;For Python package management I used Poetry. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install&#x2F;update) them for you. To start a new project with Poetry, you can run:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry new my_project
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then you can add dependencies to your project by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry add requests
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And you can install the dependencies by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Poetry also gives you commmand line tools to run your project. For example, you can run your project by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry run python my_project.py
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The result of all of this is TADDAA  : www.aminehdadsetan.net&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About</title>
+        <published>2024-12-20T00:00:00+00:00</published>
+        <updated>2024-12-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/about/"/>
+        <id> https://aminehd.github.io/tech-content-site/about/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/about/">&lt;p&gt;I am a software engineer and I like teaching and simleys :).
+I am a big fan of the &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;deployment&#x2F;github-pages&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; static site generator and I am using it to build this site.
+Please help yourself with clicking around.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding Bias and Variance</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/bias-variance/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/bias-variance/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/bias-variance/">&lt;p&gt;Understanding statistical definiton of Bias and Variance&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-bias-and-variance-matter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-bias-and-variance-matter&quot; aria-label=&quot;Anchor link for: why-bias-and-variance-matter&quot;&gt;Why Bias and Variance matter?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In practical machine learn,   we would want to know if trained models are overfitting or underfitting.
+Overfitting is associated with high Variance and underfitting is associated with high Bias.
+But the use of term variance is not exactly the same as the statistical variance.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-overfitting-is-associated-with-high-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-overfitting-is-associated-with-high-variance&quot; aria-label=&quot;Anchor link for: why-overfitting-is-associated-with-high-variance&quot;&gt;Why overfitting is associated with high Variance?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Overfitting means that if we pick a different training set, we would get a different model. That is roughly what we mean by Variance.
+In more exat terms the Variance is the Variance of the predictions for y_0 = f(x_0).
+But Variance has a very specific definition in statistics. How would that relate to the above definition?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;statistic-definition-of-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistic-definition-of-variance&quot; aria-label=&quot;Anchor link for: statistic-definition-of-variance&quot;&gt;Statistic definition of variance&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In statistics variance is the average of the squared differences from the Mean of a set of number.
+This brings us to our next question. Variance over which set? Answer is over set of all possible training sets. Yeah sets of sets sounds too nerdy to me as well.
+To make this more concrete I use a 1D input feature X and sampled 1000 Y&#x27;s for that.&lt;&#x2F;p&gt;
+&lt;p&gt;On the left side you you see the whole data set X in Grey and the training set we have chosen in blue.
+On the right side you see the line that would be trained on the training set.&lt;&#x2F;p&gt;
+&lt;p&gt;The red dots is the test datapoint for x0 = 10 and it&#x27;s trained value y0.&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aminehd&#x2F;JuliaAnimationForML&#x2F;main&#x2F;outward_sampling_with_removal_1D.gif&quot; alt=&quot;PCA in 3D&quot; id=&quot;img1&quot;&gt;
+&lt;p&gt;Now you might ask why we might smaple different training sets. Why don&#x27;t we just use the whole data set?
+The answer is that we don&#x27;t know the whole data set. The wholde data set is the population and we can only have some assuption about it. For example we can assume the popluations is normally distributed.
+Doing this we can have a formula for Bias and Variance.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+E[(f(x_0) - y_0)^2] = Bias^2 + Variance + Noise
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
