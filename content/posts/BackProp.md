@@ -14,7 +14,7 @@ comment = true
 
 Backpropagation is a gamified version of the chain rule. The general framework is to see a complex function (neural net) as a combination of simple functions, a.k.a gates. Then calculate how change in parameters, flow through these gates all the way to the *loss function*.
 
-<img src="https://raw.githubusercontent.com/aminehd/tech-content-site/content/images/BackProp_gates.png" alt="Complex function as combination of gates" id="BackProp_gates">
+<img src="https://raw.githubusercontent.com/aminehd/tech-content-site/main/content/images/BackProp_gates.png" alt="Complex function as combination of gates" id="BackProp_gates">
 
 Backpropagation is not a single too intellectually challenging concept. It is a combination of too many concepts and frameworks. Thus not knowing any of them fully can make it hard to understand.
 
