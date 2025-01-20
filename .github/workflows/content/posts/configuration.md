@@ -33,6 +33,7 @@ Defines the navigation menu items for your blog.
   ```toml
   menu = [
       { name = "/posts", url = "/posts", weight = 1 },
+      { name = "/algoVisual", url = "/algoVisual", weight = 5 },
       { name = "/projects", url = "/projects", weight = 2 },
       { name = "/about", url = "/about", weight = 3 },
       { name = "/tags", url = "/tags", weight = 4 },
