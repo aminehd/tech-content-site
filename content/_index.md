@@ -5,12 +5,9 @@ template = "homepage.html"
 Powered by GitHub Pages and [Zola](https://www.getzola.org/documentation/deployment/github-pages/) :: [Source Code](https://github.com/aminehd/tech-content-site) 
 
 
-I am a software engineer and I like teaching and simleys :). 
-I am a big fan of the [Zola](https://www.getzola.org/documentation/deployment/github-pages/) static site generator and I am using it to build this site.
-Checkout my posts. 
+When I'm not working at work, I'm experimenting with new concepts and bullying myself into learning new things. I enjoy breaking complex ideas into digestible pieces and sharing them with the world.
 
+I built this site using [Zola](https://www.getzola.org/documentation/deployment/github-pages/), a lightning-fast static site generator that keeps things clean and simple.
 
-Checkout my posts. I share tutorials, code samples, and thoughts on software development and machine learning here.
-
-More stuff to come soon!
+This space serves as a collection of thoughts, experiments, and learnings I'm cultivating along my tech journey. Feel free to explore, and don't hesitate to connect if something catches your interest.
 <!-- Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/). -->
