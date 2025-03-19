@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/about/</loc>
+        <lastmod>2024-12-20</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/algoVisual/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/algoVisual/binarysearch/</loc>
+        <lastmod>2024-07-09</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/algoVisual/dfviz/</loc>
+        <lastmod>2024-07-09</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/algoVisual/page/1/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/entropy/</loc>
+        <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/backprop/</loc>
+        <lastmod>2024-12-30</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/bias-variance/</loc>
+        <lastmod>2024-07-09</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/binarysearch/</loc>
+        <lastmod>2024-07-09</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/llmselfref/</loc>
+        <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/posts/self-hosting/</loc>
+        <lastmod>2024-12-30</lastmod>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/projects/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/documentation/</loc>
+    </url>
+    <url>
+        <loc> https://aminehd.github.io/tech-content-site/tags/me/</loc>
+    </url>
+</urlset>
