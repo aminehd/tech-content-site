@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Amineh Dadsetan</title>
+    <subtitle>This is an example description</subtitle>
+    <link rel="self" type="application/atom+xml" href=" https://aminehd.github.io/tech-content-site/atom.xml"/>
+    <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-03-19T00:00:00+00:00</updated>
+    <id> https://aminehd.github.io/tech-content-site/atom.xml</id>
+    <entry xml:lang="en">
+        <title>LLMs and Gödelian Self-Reference</title>
+        <published>2025-03-19T00:00:00+00:00</published>
+        <updated>2025-03-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/llmselfref/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/llmselfref/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/llmselfref/">&lt;h1 id=&quot;llms-and-godelian-self-reference&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#llms-and-godelian-self-reference&quot; aria-label=&quot;Anchor link for: llms-and-godelian-self-reference&quot;&gt;LLMs and Gödelian Self-Reference&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I have been recently reading &quot;I Am a Strange Loop&quot; by Douglas Hofstadter. The book explains Gödel&#x27;s incompleteness theorem and how it relates to human consciousness.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;godel-s-self-referential-system&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#godel-s-self-referential-system&quot; aria-label=&quot;Anchor link for: godel-s-self-referential-system&quot;&gt;Gödel&#x27;s Self-Referential System&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;For the first part, it explains how Gödel created a system where mathematical statements could refer to themselves through an encoding.&lt;&#x2F;p&gt;
+&lt;p&gt;In a very high level:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Step 1:&lt;&#x2F;strong&gt; He created a mapping from logical statements to numbers.&lt;&#x2F;p&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Step 2:&lt;&#x2F;strong&gt; Then he created meta-logical statements of the form &quot;The number associated with this statement has such property&quot;. That is because the logical framework was able to talk about properties of numbers.&lt;&#x2F;p&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Step 3:&lt;&#x2F;strong&gt; He used a technique to make such a meta-statement that talks about the Gödel number of the statement itself.&lt;&#x2F;p&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Step 4:&lt;&#x2F;strong&gt; Lastly, he uses the mapping to carry out a level shift. What is a level shift?&lt;&#x2F;p&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Step 5:&lt;&#x2F;strong&gt; The level shift happens when whatever is true about the Gödel number is also true about the statement that number is encoding. So the meta-statement we started with is talking about itself through a level shift.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;llms-and-self-reference&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#llms-and-self-reference&quot; aria-label=&quot;Anchor link for: llms-and-self-reference&quot;&gt;LLMs and Self-Reference&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Now looking at LLMs, there are some similarities:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🤖 LLMs can learn meta-statements. For example, we can teach LLMs to talk about the properties of the network structure and the weights of a certain class of LLMs that they themselves belong to.&lt;&#x2F;p&gt;
+&lt;p&gt;🤖 Then they will be talking about the lower level entities that are the weights and the code that makes themselves. So they can talk about themselves through a level shift. &lt;em&gt;(Weights → low level, Sentences that are output of LLM → high level)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;🤖 We can add an agent to the output of LLM. This agent can do 2 types of things:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;It can try to update the weights based on what it learned about its own weights&lt;&#x2F;li&gt;
+&lt;li&gt;It can query the LLM about its self-knowledge, and feed the answer back to the LLM.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-strange-loop-connection&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-strange-loop-connection&quot; aria-label=&quot;Anchor link for: the-strange-loop-connection&quot;&gt;The Strange Loop Connection&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This can be somewhat similar to Hofstadter&#x27;s idea of human consciousness: &lt;strong&gt;the self-referential loop of the brain&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Entropy and creativity</title>
+        <published>2025-01-19T00:00:00+00:00</published>
+        <updated>2025-01-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/entropy/"/>
+        <id> https://aminehd.github.io/tech-content-site/entropy/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/entropy/">&lt;p&gt;One of the definitions I have the least difficulty with is this one: Entropy is the amount of lack of knowledge in a system. In other words, the more a system gains entropy and becomes chaotic, the less knowledge an observer has about the system. Lack of knowledge means uncertainty, and uncertainty can be tied to the number of possibilities. So you can think about a probability distribution over the possibilities of the system. If there is only one possible state x, then the probability distribution is 1 for x and 0 for all other states. This is the most certain state and has the least entropy.&lt;&#x2F;p&gt;
+&lt;p&gt;Entropy is commonly measured for thermodynamic systems. In this case, the number of particles and their energy is the most important factor about entropy because it determines the probability distributions over the possibilities. But we can also come up with a setup to define and measure entropy for information systems. Consider a sentence with a blank placeholder: &quot;I am going to my home to feed my pet camels with ---&quot;. The more words you can fill in the blank, the more possibilities there are, so the more entropy the sentence has. Mathematically, this means entropy is a property of a probability distribution over all possible words that can go into the blank.
+$$
+P(w) = \textit{probability of word w going into the blank}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Now think about a half-filled mathematical proof with a lot of blank spaces. Again, there are a lot of possibilities to complete the proof, and you can define the same probability distribution over the possibilities.
+$$
+P(p) = \textit{probability of proof p being the correct completion}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s say you want to train a large language model (LLM) to fill in the blank. Let&#x27;s say you have a machine learning model that tries to find the most likely answer, meaning it tries to minimize the cross entropy function. However, humans have a tendency to like more creative solutions. Can we somehow relate the creativity of a solution to the entropy? The first thing that comes to my mind is a more creative solution is a less likely solution. But is this true? Because in that case trying to minimize the cross-entropy function would be a bad idea.&lt;&#x2F;p&gt;
+&lt;p&gt;But what if we have a data set full of creative answers and that is our reference distribution. Then can we say that a creative answer to the question is more likely to a less creative answer?&lt;&#x2F;p&gt;
+&lt;p&gt;Prior probability VS likelihood:
+To solve the apparent conflict, we can get a bit more exact about the given probability distribution and the likelihoods of data. In fact the distinction or prior probability and the likelihood can explain some qualities of creativity. Let&#x27;s say we just have a complete blank sentence with 4 placeholders (-- -- -- --). Then all we need is a prior probability over all possible combinations of 4 words.&lt;&#x2F;p&gt;
+&lt;p&gt;Let say we start adding context to it. Like , &quot;Hey, My uncle knew the secret of life and he said it can be said with 4 words.  -- -- -- --.&quot; Then we still have a prior probability of all possible combination of 4 words but now we have a posterior probability  after observing the data. The likelihood of the data is the probability of the data given the model.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+P(w_1, w_2, w_3, w_4 | &quot;\textit{Hey, My uncle knew the secret of the life and he said it can be said with 4 words}&quot;)
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;In that you don&#x27;t want to find the most likely sentence but you want to find the most likely sentence given the context. So maybe creativity does depend on the context. Maybe creativity actually needs some context. Maybe if you try to be creative without context, you are just being obnoxious.
+Can we say the farther the posterior probability is from the prior probability, the more surprise is there? and when we find a more surprising answer the more creative it is? What is it related to entropy? Can we say a more creative answer decreases the entropy of the system ever more than a less-creative, less surprising one?&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Having issue with understanding Backpropagation?</title>
+        <published>2024-12-30T00:00:00+00:00</published>
+        <updated>2024-12-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/backprop/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/backprop/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/backprop/">&lt;h1 id=&quot;backpropagation-in-neural-networks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#backpropagation-in-neural-networks&quot; aria-label=&quot;Anchor link for: backpropagation-in-neural-networks&quot;&gt;Backpropagation in Neural Networks&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Backpropagation is a gamified version of the chain rule. The general framework is to see a complex function (neural net) as a combination of simple functions, a.k.a gates. Then calculate how change in parameters, flow through these gates all the way to the &lt;em&gt;loss function&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aminehd&#x2F;tech-content-site&#x2F;main&#x2F;content&#x2F;images&#x2F;BackProp_gates.png&quot; alt=&quot;Complex function as combination of gates&quot; id=&quot;BackProp_gates&quot;&gt;
+&lt;p&gt;Backpropagation is not a single too intellectually challenging concept. It is a combination of too many concepts and frameworks. Thus not knowing any of them fully can make it hard to understand.&lt;&#x2F;p&gt;
+&lt;p&gt;If you have ever found yourself struggling to understand backpropagation, follow my questions below. Try to answer them. If you find them vague, read the resources I have linked. Don&#x27;t get stuck on any one question. Rather try to read through and come back to the question later.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🌟 &lt;strong&gt;Do you know the difference between the Total Derivative $ df&#x2F;dt $ and the Partial Derivative $ \partial f&#x2F;\partial t $?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+$ df&#x2F;dt $ accounts for all the ways in which $ f $ changes as $ t $ changes, while $ \partial f&#x2F;\partial t $ only considers the direct effect of $ t $ on $ f $. For functions of a single variable, $ df&#x2F;dt $ and $ \partial f&#x2F;\partial t $ are essentially the same. See below example and read more on &lt;a href=&quot;https:&#x2F;&#x2F;math.stackexchange.com&#x2F;questions&#x2F;2277214&#x2F;the-difference-between-frac-dfdt-and-frac-partial-f-partial-t&quot;&gt;Math StackExchange&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;For example for a function $ f(x(t), y(t), t) $:
+$$
+\frac{df}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} + \frac{\partial f}{\partial t}
+$$&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🔗 &lt;strong&gt;Have you heard of the Chain Rule?&lt;&#x2F;strong&gt;  Does chain rule apply for partial derivatives or total derivatives?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;📐 &lt;strong&gt;Do you know how to move from simple derivatives to vectorized ones?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Read about &lt;a href=&quot;https:&#x2F;&#x2F;web.stanford.edu&#x2F;class&#x2F;cs224n&#x2F;readings&#x2F;gradient-notes.pdf&quot;&gt;Vectorized Derivatives&lt;&#x2F;a&gt;. Pay close attention to the &quot;Useful Identities&quot; section.&lt;br &#x2F;&gt;
+For a matrix $ A $, vector $ x $, and scalar $ a $, we have the following identity, where $x = (x_1, ..., x_n) \in \mathbb{R}^n$ and $f(x) \in \mathbb{R}_m$:&lt;br &#x2F;&gt;
+$$
+\frac{\partial f}{\partial x} =
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_1}{\partial x_n} \
+\vdots &amp;amp; \ddots &amp;amp; \vdots \
+\frac{\partial f_m}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_m}{\partial x_n}
+\end{bmatrix}
+$$&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is $ \frac{\partial f}{\partial x} $ equal to $ \frac{df}{dx} $?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the dimension of $ \frac{\partial f}{\partial x} $?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;$\frac{\partial f}{\partial x}$ is called the Jacobian matrix. Do you know Jacobian&#x27;s matrix is a linear transformation in the space of functions? Wait what &lt;em&gt;Function Space&lt;&#x2F;em&gt;? 🤯&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;📚 &lt;strong&gt;Have you read Andrej Karpathy&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;cs231n.github.io&#x2F;optimization-2&#x2F;#intro&quot;&gt;Intuitive Understanding of Backpropagation&lt;&#x2F;a&gt;?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Have you tried to understand what he means by local gradients and backpropagation being a local process? What about staged backpropagation?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🧠 &lt;strong&gt;Do you know cool tricks to calculate complex derivatives?&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+For example, how do you calculate the derivative of the sigmoid function? Here it is (though I didn’t prove it—you can!):&lt;br &#x2F;&gt;
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}}\
+\frac{d\sigma}{dx} = \sigma(x) \cdot (1 - \sigma(x))
+$$&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;🧠 &lt;strong&gt;Do you want to see 5 lines of code that summerizes it?&lt;&#x2F;strong&gt;  No problem&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Forward pass
+&lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forward&lt;&#x2F;span&gt;&lt;span&gt;(a)
+&lt;&#x2F;span&gt;&lt;span&gt;y &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forward&lt;&#x2F;span&gt;&lt;span&gt;(x)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Backward pass
+&lt;&#x2F;span&gt;&lt;span&gt;dL_dy &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;... &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# gradient of loss w.r.t. final output
+&lt;&#x2F;span&gt;&lt;span&gt;dL_dx &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;backward&lt;&#x2F;span&gt;&lt;span&gt;(dL_dy) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# ∂L&#x2F;∂x = (∂L&#x2F;∂y) * (∂y&#x2F;∂x)
+&lt;&#x2F;span&gt;&lt;span&gt;dL_da &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;gate1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;backward&lt;&#x2F;span&gt;&lt;span&gt;(dL_dx) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# ∂L&#x2F;∂a = (∂L&#x2F;∂x) * (∂x&#x2F;∂a)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Serving a website from your local computer.</title>
+        <published>2024-12-30T00:00:00+00:00</published>
+        <updated>2024-12-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/self-hosting/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/self-hosting/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/self-hosting/">&lt;p&gt;Serving a website from your local computer.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;self-hosting-why&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#self-hosting-why&quot; aria-label=&quot;Anchor link for: self-hosting-why&quot;&gt;Self Hosting? Why?&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;There are tons of ways you can host a website. In fact if you never host a website in your life that is fine too as there is so many websites out there and no one is going to miss your website.&lt;&#x2F;p&gt;
+&lt;p&gt;But none of these means you need a reason for self hosting. Self hosting makes you feel better than whoever that is not self hosting. Thats a good enough reason for me.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;what-i-used-for-my-my-self-hosting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-i-used-for-my-my-self-hosting&quot; aria-label=&quot;Anchor link for: what-i-used-for-my-my-self-hosting&quot;&gt;What I used for my my self hosting?&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;A list of things I used for my self hosting:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain Name from namecheap&lt;&#x2F;li&gt;
+&lt;li&gt;AWS Route 53 Hosted Zone&lt;&#x2F;li&gt;
+&lt;li&gt;EC2 instance for reverse proxy&lt;&#x2F;li&gt;
+&lt;li&gt;Nginx Proxy Manager&lt;&#x2F;li&gt;
+&lt;li&gt;Tailscale&lt;&#x2F;li&gt;
+&lt;li&gt;Portainer&lt;&#x2F;li&gt;
+&lt;li&gt;Docker&lt;&#x2F;li&gt;
+&lt;li&gt;Poetry&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot; aria-label=&quot;Anchor link for: domain-name-from-namecheap-and-aws-rout53-hosted-zone&quot;&gt;Domain Name from namecheap and AWS Rout53 Hosted Zone.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;You need a Domain Name so people can use it to load your website (i.e. something as lame as combination of your first name and your last name). Then you need a Hosted Zone where you can add DNS records to point your domain to your server.
+I used Namecheap for Domain Name and AWS Route 53 for Hosted Zone.&lt;&#x2F;p&gt;
+&lt;p&gt;This takes internet traffic from your domain name to your server. Now, your local server is not exposed to the internet. That&#x27;s why you&#x27;re gonna need a reverse proxy. Next section explains that.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ec2-nginx-proxy-manager-tailscale&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ec2-nginx-proxy-manager-tailscale&quot; aria-label=&quot;Anchor link for: ec2-nginx-proxy-manager-tailscale&quot;&gt;EC2, Nginx Proxy Manager, Tailscale.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I used EC2 instance as for reverse proxy. I needed server application that can take internet traffic and forward it to my local server. I used Nginx Proxy Manager for that. It just gets traffic and for any particular path, it forwards it to the specific IP address and port. Later on you can setup SSL certificates for your domain name usig Nginx Proxy Manager.
+It lets you decouple network setup from your simple python server.&lt;&#x2F;p&gt;
+&lt;p&gt;Now time for exposing the local computer port to server. That is portforwarding:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination local_ip:8080
+&lt;&#x2F;span&gt;&lt;span&gt;sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;However, you cannot easily expose your local computer to the internet. You need a VPN. I used Tailscale for that.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo tailscale up --auth-key=... --advertise-routes=0.0.0.0&#x2F;0,::&#x2F;0 --advertise-exit-node=false
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Run  computer will make it appear as if it is on the same network as your server.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;portainer-docker-and-poetry-for-managing-the-server-application&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#portainer-docker-and-poetry-for-managing-the-server-application&quot; aria-label=&quot;Anchor link for: portainer-docker-and-poetry-for-managing-the-server-application&quot;&gt;Portainer, Docker, and Poetry for managing the server application.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I created a simple python server with Flask. Then I used Docker to containerize it. I used Portainer to manage the Docker containers. Portainer is a web interface for managing Docker containers. You can create containers, start, stop, and delete them. You can also see the logs of the containers. More importnatly you can compose stacks of containers. So for example you can run a database and a web server in the same stack.&lt;&#x2F;p&gt;
+&lt;p&gt;For Python package management I used Poetry. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install&#x2F;update) them for you. To start a new project with Poetry, you can run:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry new my_project
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then you can add dependencies to your project by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry add requests
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And you can install the dependencies by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Poetry also gives you commmand line tools to run your project. For example, you can run your project by running:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;poetry run python my_project.py
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The result of all of this is TADDAA  : www.aminehdadsetan.net&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About</title>
+        <published>2024-12-20T00:00:00+00:00</published>
+        <updated>2024-12-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/about/"/>
+        <id> https://aminehd.github.io/tech-content-site/about/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/about/">&lt;h1 id=&quot;about-me&quot;&gt;About Me&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;m a software engineer at Amazon with a passion for the intersection of technology, machine learning, and mathematics.&lt;&#x2F;p&gt;
+&lt;p&gt;When I&#x27;m not working at work, I&#x27;m experimenting with new concepts and bullying myself into learning new things. I enjoy breaking complex ideas into digestible pieces and sharing them with the world.&lt;&#x2F;p&gt;
+&lt;p&gt;I built this site using &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;deployment&#x2F;github-pages&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;, a lightning-fast static site generator that keeps things clean and simple.&lt;&#x2F;p&gt;
+&lt;p&gt;This space serves as a collection of thoughts, experiments, and learnings I&#x27;m cultivating along my tech journey. Feel free to explore, and don&#x27;t hesitate to connect if something catches your interest.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Binary search as patitioning based on condtion change</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/algoVisual/binarysearch/"/>
+        <id> https://aminehd.github.io/tech-content-site/algoVisual/binarysearch/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/algoVisual/binarysearch/">&lt;h1 id=&quot;binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot; aria-label=&quot;Anchor link for: binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot;&gt;Binary Search: Beyond Finding Values - A Mental Model for Solving Problems&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;find-first-and-last-position-of-element-in-sorted-array&#x2F;submissions&#x2F;1501892853&#x2F;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-power-of-mental-models&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-power-of-mental-models&quot; aria-label=&quot;Anchor link for: the-power-of-mental-models&quot;&gt;The Power of Mental Models&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Most developers learn binary search as an algorithm to efficiently find a value in a sorted array. However, this mental model limits our understanding of binary search&#x27;s true potential. There&#x27;s a more powerful way to think about it:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Binary search doesn&#x27;t just find values - it finds the exact point where a boolean condition changes from False to True in a sorted sequence.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This shift in perspective transforms binary search from a simple lookup algorithm into a powerful tool for solving a wide range of problems.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-traditional-vs-powerful-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-traditional-vs-powerful-view&quot; aria-label=&quot;Anchor link for: the-traditional-vs-powerful-view&quot;&gt;The Traditional vs. Powerful View&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;traditional-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#traditional-view&quot; aria-label=&quot;Anchor link for: traditional-view&quot;&gt;Traditional View&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Binary search finds a specific value&lt;&#x2F;li&gt;
+&lt;li&gt;It works by repeatedly dividing the search space&lt;&#x2F;li&gt;
+&lt;li&gt;It returns the position of the target or indicates it&#x27;s not found&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;powerful-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#powerful-view&quot; aria-label=&quot;Anchor link for: powerful-view&quot;&gt;Powerful View&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Binary search finds a partition point in a monotonic sequence&lt;&#x2F;li&gt;
+&lt;li&gt;It identifies where a boolean condition transitions from False to True&lt;&#x2F;li&gt;
+&lt;li&gt;It can solve any problem that can be framed as finding such a transition&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;understanding-boundary-conditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#understanding-boundary-conditions&quot; aria-label=&quot;Anchor link for: understanding-boundary-conditions&quot;&gt;Understanding Boundary Conditions&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The key to this powerful view is the concept of a &quot;boundary condition&quot; - a predicate function that returns True&#x2F;False and has a clear transition point. Let&#x27;s look at a concrete example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Array:     [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Target: 2
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# For leftmost 2:
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Values:    [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Condition: [F, T, T, T, T, T]  (x &amp;gt;= 2)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;#               ^ we want this position
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# For rightmost 2:
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Values:    [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Condition: [F, F, F, F, T, T]  (x &amp;gt; 2)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;#                     ^ we want this position
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;the-abstract-binary-search&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-abstract-binary-search&quot; aria-label=&quot;Anchor link for: the-abstract-binary-search&quot;&gt;The Abstract Binary Search&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here&#x27;s how we can implement binary search to make this boundary condition concept explicit:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;boundary_condition&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    lo, hi &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(nums)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;while &lt;&#x2F;span&gt;&lt;span&gt;lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span&gt;hi:
+&lt;&#x2F;span&gt;&lt;span&gt;        mid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;(lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+ &lt;&#x2F;span&gt;&lt;span&gt;hi) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&#x2F;&#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;boundary_condition&lt;&#x2F;span&gt;&lt;span&gt;(nums[mid]):
+&lt;&#x2F;span&gt;&lt;span&gt;            hi &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;mid
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;else&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;            lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;mid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;lo
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here more abstract version:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;left:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Finding leftmost: condition is &amp;quot;≥ target&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    boundary_condition &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;else&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Finding rightmost: condition is &amp;quot;&amp;gt; target&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    boundary_condition &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;common-boundary-conditions-and-their-uses&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-boundary-conditions-and-their-uses&quot; aria-label=&quot;Anchor link for: common-boundary-conditions-and-their-uses&quot;&gt;Common Boundary Conditions and Their Uses&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here are some useful boundary conditions and what they find:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find leftmost occurrence of target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find rightmost occurrence of target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find first element greater than target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find last element less than target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find square root (integer)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;practical-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#practical-applications&quot; aria-label=&quot;Anchor link for: practical-applications&quot;&gt;Practical Applications&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This mental model lets us solve many problems elegantly:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Finding Element Positions with Duplicates&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_leftmost&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_rightmost&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Count occurrences
+&lt;&#x2F;span&gt;&lt;span&gt;count &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_rightmost&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;target) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_leftmost&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Finding Insertion Points&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_insertion_point&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Finding Square Roots&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;integer_sqrt&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;n) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;the-loop-invariant&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-loop-invariant&quot; aria-label=&quot;Anchor link for: the-loop-invariant&quot;&gt;The Loop Invariant&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The correctness of this approach relies on maintaining a crucial loop invariant:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Everything before &lt;code&gt;lo&lt;&#x2F;code&gt; fails the condition (is False)&lt;&#x2F;li&gt;
+&lt;li&gt;Everything at or after &lt;code&gt;hi&lt;&#x2F;code&gt; satisfies the condition (is True)&lt;&#x2F;li&gt;
+&lt;li&gt;The answer must be at position &lt;code&gt;lo&lt;&#x2F;code&gt; when the loop terminates&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;why-this-matters&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-this-matters&quot; aria-label=&quot;Anchor link for: why-this-matters&quot;&gt;Why This Matters&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Understanding binary search as a tool for finding boundary points rather than just values:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Makes the algorithm more versatile&lt;&#x2F;li&gt;
+&lt;li&gt;Simplifies handling of edge cases&lt;&#x2F;li&gt;
+&lt;li&gt;Makes it easier to adapt to new problems&lt;&#x2F;li&gt;
+&lt;li&gt;Provides a framework for proving correctness&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;questions-this-view-answers&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#questions-this-view-answers&quot; aria-label=&quot;Anchor link for: questions-this-view-answers&quot;&gt;Questions This View Answers&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Once you understand binary search as finding a boundary condition, you can solve these types of questions elegantly:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;array-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#array-problems&quot; aria-label=&quot;Anchor link for: array-problems&quot;&gt;Array Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find the first&#x2F;last position of element X in a sorted array with duplicates&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt;= target&lt;&#x2F;code&gt; or &lt;code&gt;x &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find the smallest element greater than X&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find where to insert X to maintain sorted order&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt;= target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum element in a rotated sorted array&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;lt; array[0]&lt;&#x2F;code&gt; (first element smaller than original first element)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find peak element in mountain array&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt; x+1&lt;&#x2F;code&gt; (first decreasing element)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;numeric-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#numeric-problems&quot; aria-label=&quot;Anchor link for: numeric-problems&quot;&gt;Numeric Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Calculate square root of N (floor value)&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x * x &amp;gt; N&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest divisor greater than 1&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;N % x == 0&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest number with sum of digits &amp;gt; X&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;sum_of_digits(n) &amp;gt; X&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;matrix-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#matrix-problems&quot; aria-label=&quot;Anchor link for: matrix-problems&quot;&gt;Matrix Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find median in row-wise sorted matrix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;count_elements_less_than(x) &amp;gt; total&#x2F;2&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find kth smallest element in sorted matrix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;count_elements_less_than(x) &amp;gt;= k&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;optimization-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#optimization-problems&quot; aria-label=&quot;Anchor link for: optimization-problems&quot;&gt;Optimization Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum capacity needed to ship packages within D days&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_ship_with_capacity(x, D)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum time to complete all jobs with K workers&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_complete_in_time(x, K)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;string-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#string-problems&quot; aria-label=&quot;Anchor link for: string-problems&quot;&gt;String Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;13&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest string that contains all strings as substring&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_form_string_of_length(x)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find longest common prefix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;is_prefix_for_all(x)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;system-design-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-design-problems&quot; aria-label=&quot;Anchor link for: system-design-problems&quot;&gt;System Design Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;15&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find optimal server capacity&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_handle_load(capacity)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Rate limiter threshold&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;exceeds_rate_limit(requests_per_second)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;machine-learning-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#machine-learning-applications&quot; aria-label=&quot;Anchor link for: machine-learning-applications&quot;&gt;Machine Learning Applications&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;17&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find optimal learning rate&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;convergence_rate(lr) &amp;gt; threshold&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Hyperparameter tuning&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;validation_score(param) &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;real-world-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#real-world-applications&quot; aria-label=&quot;Anchor link for: real-world-applications&quot;&gt;Real-World Applications&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The boundary condition view makes binary search applicable to:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Database query optimization (finding optimal index positions)&lt;&#x2F;li&gt;
+&lt;li&gt;Load balancer thresholds&lt;&#x2F;li&gt;
+&lt;li&gt;Resource allocation in distributed systems&lt;&#x2F;li&gt;
+&lt;li&gt;Image processing (finding threshold values)&lt;&#x2F;li&gt;
+&lt;li&gt;Financial algorithms (finding optimal trading parameters)&lt;&#x2F;li&gt;
+&lt;li&gt;Game development (difficulty scaling)&lt;&#x2F;li&gt;
+&lt;li&gt;Network packet routing (finding optimal paths)&lt;&#x2F;li&gt;
+&lt;li&gt;Machine learning model tuning&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;Conclusion&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The next time you encounter a problem that involves finding a position where some property changes, remember: binary search isn&#x27;t just for finding values - it&#x27;s for finding boundaries. This mental model will help you recognize and solve a much wider range of problems efficiently.&lt;&#x2F;p&gt;
+&lt;p&gt;Remember the key insight: any problem that can be framed as finding the point where a boolean condition changes from False to True in a monotonic sequence can be solved using binary search.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Binary search as patitioning based on condtion change</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/algoVisual/dfviz/"/>
+        <id> https://aminehd.github.io/tech-content-site/algoVisual/dfviz/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/algoVisual/dfviz/">&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aminehd&#x2F;tech-content-site&#x2F;main&#x2F;content&#x2F;images&#x2F;code_viz.gif&quot; alt=&quot;PCA in 3D&quot; id=&quot;img1&quot;&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding Bias and Variance</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/bias-variance/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/bias-variance/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/bias-variance/">&lt;p&gt;Understanding statistical definiton of Bias and Variance&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-bias-and-variance-matter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-bias-and-variance-matter&quot; aria-label=&quot;Anchor link for: why-bias-and-variance-matter&quot;&gt;Why Bias and Variance matter?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In practical machine learn,   we would want to know if trained models are overfitting or underfitting.
+Overfitting is associated with high Variance and underfitting is associated with high Bias.
+But the use of term variance is not exactly the same as the statistical variance.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-overfitting-is-associated-with-high-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-overfitting-is-associated-with-high-variance&quot; aria-label=&quot;Anchor link for: why-overfitting-is-associated-with-high-variance&quot;&gt;Why overfitting is associated with high Variance?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Overfitting means that if we pick a different training set, we would get a different model. That is roughly what we mean by Variance.
+In more exat terms the Variance is the Variance of the predictions for y_0 = f(x_0).
+But Variance has a very specific definition in statistics. How would that relate to the above definition?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;statistic-definition-of-variance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistic-definition-of-variance&quot; aria-label=&quot;Anchor link for: statistic-definition-of-variance&quot;&gt;Statistic definition of variance&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In statistics variance is the average of the squared differences from the Mean of a set of number.
+This brings us to our next question. Variance over which set? Answer is over set of all possible training sets. Yeah sets of sets sounds too nerdy to me as well.
+To make this more concrete I use a 1D input feature X and sampled 1000 Y&#x27;s for that.&lt;&#x2F;p&gt;
+&lt;p&gt;On the left side you you see the whole data set X in Grey and the training set we have chosen in blue.
+On the right side you see the line that would be trained on the training set.&lt;&#x2F;p&gt;
+&lt;p&gt;The red dots is the test datapoint for x0 = 10 and it&#x27;s trained value y0.&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aminehd&#x2F;JuliaAnimationForML&#x2F;main&#x2F;outward_sampling_with_removal_1D.gif&quot; alt=&quot;PCA in 3D&quot; id=&quot;img1&quot;&gt;
+&lt;p&gt;Now you might ask why we might smaple different training sets. Why don&#x27;t we just use the whole data set?
+The answer is that we don&#x27;t know the whole data set. The wholde data set is the population and we can only have some assuption about it. For example we can assume the popluations is normally distributed.
+Doing this we can have a formula for Bias and Variance.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+E[(f(x_0) - y_0)^2] = Bias^2 + Variance + Noise
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Binary search as partitioning based on condition change</title>
+        <published>2024-07-09T00:00:00+00:00</published>
+        <updated>2024-07-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href=" https://aminehd.github.io/tech-content-site/posts/binarysearch/"/>
+        <id> https://aminehd.github.io/tech-content-site/posts/binarysearch/</id>
+        
+        <content type="html" xml:base=" https://aminehd.github.io/tech-content-site/posts/binarysearch/">&lt;h1 id=&quot;binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot; aria-label=&quot;Anchor link for: binary-search-beyond-finding-values-a-mental-model-for-solving-problems&quot;&gt;Binary Search: Beyond Finding Values - A Mental Model for Solving Problems&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;find-first-and-last-position-of-element-in-sorted-array&#x2F;submissions&#x2F;1501892853&#x2F;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-power-of-mental-models&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-power-of-mental-models&quot; aria-label=&quot;Anchor link for: the-power-of-mental-models&quot;&gt;The Power of Mental Models&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Most developers learn binary search as an algorithm to efficiently find a value in a sorted array. However, this mental model limits our understanding of binary search&#x27;s true potential. There&#x27;s a more powerful way to think about it:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Binary search doesn&#x27;t just find values - it finds the exact point where a boolean condition changes from False to True in a sorted sequence.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This shift in perspective transforms binary search from a simple lookup algorithm into a powerful tool for solving a wide range of problems.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-traditional-vs-powerful-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-traditional-vs-powerful-view&quot; aria-label=&quot;Anchor link for: the-traditional-vs-powerful-view&quot;&gt;The Traditional vs. Powerful View&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;traditional-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#traditional-view&quot; aria-label=&quot;Anchor link for: traditional-view&quot;&gt;Traditional View&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Binary search finds a specific value&lt;&#x2F;li&gt;
+&lt;li&gt;It works by repeatedly dividing the search space&lt;&#x2F;li&gt;
+&lt;li&gt;It returns the position of the target or indicates it&#x27;s not found&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;powerful-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#powerful-view&quot; aria-label=&quot;Anchor link for: powerful-view&quot;&gt;Powerful View&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Binary search finds a partition point in a monotonic sequence&lt;&#x2F;li&gt;
+&lt;li&gt;It identifies where a boolean condition transitions from False to True&lt;&#x2F;li&gt;
+&lt;li&gt;It can solve any problem that can be framed as finding such a transition&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;understanding-boundary-conditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#understanding-boundary-conditions&quot; aria-label=&quot;Anchor link for: understanding-boundary-conditions&quot;&gt;Understanding Boundary Conditions&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The key to this powerful view is the concept of a &quot;boundary condition&quot; - a predicate function that returns True&#x2F;False and has a clear transition point. Let&#x27;s look at a concrete example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Array:     [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Target: 2
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# For leftmost 2:
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Values:    [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Condition: [F, T, T, T, T, T]  (x &amp;gt;= 2)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;#               ^ we want this position
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# For rightmost 2:
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Values:    [1, 2, 2, 2, 3, 4]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Condition: [F, F, F, F, T, T]  (x &amp;gt; 2)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;#                     ^ we want this position
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;the-abstract-binary-search&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-abstract-binary-search&quot; aria-label=&quot;Anchor link for: the-abstract-binary-search&quot;&gt;The Abstract Binary Search&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here&#x27;s how we can implement binary search to make this boundary condition concept explicit:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;boundary_condition&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    lo, hi &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(nums)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;while &lt;&#x2F;span&gt;&lt;span&gt;lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span&gt;hi:
+&lt;&#x2F;span&gt;&lt;span&gt;        mid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;(lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+ &lt;&#x2F;span&gt;&lt;span&gt;hi) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&#x2F;&#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;boundary_condition&lt;&#x2F;span&gt;&lt;span&gt;(nums[mid]):
+&lt;&#x2F;span&gt;&lt;span&gt;            hi &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;mid
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;else&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;            lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;mid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;lo
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here more abstract version:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;left:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Finding leftmost: condition is &amp;quot;≥ target&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    boundary_condition &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;else&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Finding rightmost: condition is &amp;quot;&amp;gt; target&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    boundary_condition &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;common-boundary-conditions-and-their-uses&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-boundary-conditions-and-their-uses&quot; aria-label=&quot;Anchor link for: common-boundary-conditions-and-their-uses&quot;&gt;Common Boundary Conditions and Their Uses&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here are some useful boundary conditions and what they find:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find leftmost occurrence of target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find rightmost occurrence of target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find first element greater than target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find last element less than target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Find square root (integer)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;practical-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#practical-applications&quot; aria-label=&quot;Anchor link for: practical-applications&quot;&gt;Practical Applications&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This mental model lets us solve many problems elegantly:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Finding Element Positions with Duplicates&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_leftmost&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_rightmost&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# Count occurrences
+&lt;&#x2F;span&gt;&lt;span&gt;count &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_rightmost&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;target) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_leftmost&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Finding Insertion Points&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;find_insertion_point&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(nums&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt;= &lt;&#x2F;span&gt;&lt;span&gt;target)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Finding Square Roots&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;integer_sqrt&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;abstract_binary_search&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;n) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;the-loop-invariant&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-loop-invariant&quot; aria-label=&quot;Anchor link for: the-loop-invariant&quot;&gt;The Loop Invariant&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The correctness of this approach relies on maintaining a crucial loop invariant:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Everything before &lt;code&gt;lo&lt;&#x2F;code&gt; fails the condition (is False)&lt;&#x2F;li&gt;
+&lt;li&gt;Everything at or after &lt;code&gt;hi&lt;&#x2F;code&gt; satisfies the condition (is True)&lt;&#x2F;li&gt;
+&lt;li&gt;The answer must be at position &lt;code&gt;lo&lt;&#x2F;code&gt; when the loop terminates&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;why-this-matters&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-this-matters&quot; aria-label=&quot;Anchor link for: why-this-matters&quot;&gt;Why This Matters&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Understanding binary search as a tool for finding boundary points rather than just values:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Makes the algorithm more versatile&lt;&#x2F;li&gt;
+&lt;li&gt;Simplifies handling of edge cases&lt;&#x2F;li&gt;
+&lt;li&gt;Makes it easier to adapt to new problems&lt;&#x2F;li&gt;
+&lt;li&gt;Provides a framework for proving correctness&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;questions-this-view-answers&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#questions-this-view-answers&quot; aria-label=&quot;Anchor link for: questions-this-view-answers&quot;&gt;Questions This View Answers&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Once you understand binary search as finding a boundary condition, you can solve these types of questions elegantly:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;array-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#array-problems&quot; aria-label=&quot;Anchor link for: array-problems&quot;&gt;Array Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find the first&#x2F;last position of element X in a sorted array with duplicates&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt;= target&lt;&#x2F;code&gt; or &lt;code&gt;x &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find the smallest element greater than X&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find where to insert X to maintain sorted order&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt;= target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum element in a rotated sorted array&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;lt; array[0]&lt;&#x2F;code&gt; (first element smaller than original first element)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find peak element in mountain array&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x &amp;gt; x+1&lt;&#x2F;code&gt; (first decreasing element)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;numeric-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#numeric-problems&quot; aria-label=&quot;Anchor link for: numeric-problems&quot;&gt;Numeric Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Calculate square root of N (floor value)&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;x * x &amp;gt; N&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest divisor greater than 1&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;N % x == 0&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest number with sum of digits &amp;gt; X&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;sum_of_digits(n) &amp;gt; X&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;matrix-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#matrix-problems&quot; aria-label=&quot;Anchor link for: matrix-problems&quot;&gt;Matrix Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find median in row-wise sorted matrix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;count_elements_less_than(x) &amp;gt; total&#x2F;2&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find kth smallest element in sorted matrix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;count_elements_less_than(x) &amp;gt;= k&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;optimization-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#optimization-problems&quot; aria-label=&quot;Anchor link for: optimization-problems&quot;&gt;Optimization Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum capacity needed to ship packages within D days&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_ship_with_capacity(x, D)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find minimum time to complete all jobs with K workers&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_complete_in_time(x, K)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;string-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#string-problems&quot; aria-label=&quot;Anchor link for: string-problems&quot;&gt;String Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;13&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find smallest string that contains all strings as substring&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_form_string_of_length(x)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find longest common prefix&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;is_prefix_for_all(x)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;system-design-problems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-design-problems&quot; aria-label=&quot;Anchor link for: system-design-problems&quot;&gt;System Design Problems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;15&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find optimal server capacity&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;can_handle_load(capacity)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Rate limiter threshold&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;exceeds_rate_limit(requests_per_second)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;machine-learning-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#machine-learning-applications&quot; aria-label=&quot;Anchor link for: machine-learning-applications&quot;&gt;Machine Learning Applications&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ol start=&quot;17&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Find optimal learning rate&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;convergence_rate(lr) &amp;gt; threshold&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Hyperparameter tuning&quot;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boundary condition: &lt;code&gt;validation_score(param) &amp;gt; target&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;real-world-applications&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#real-world-applications&quot; aria-label=&quot;Anchor link for: real-world-applications&quot;&gt;Real-World Applications&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The boundary condition view makes binary search applicable to:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Database query optimization (finding optimal index positions)&lt;&#x2F;li&gt;
+&lt;li&gt;Load balancer thresholds&lt;&#x2F;li&gt;
+&lt;li&gt;Resource allocation in distributed systems&lt;&#x2F;li&gt;
+&lt;li&gt;Image processing (finding threshold values)&lt;&#x2F;li&gt;
+&lt;li&gt;Financial algorithms (finding optimal trading parameters)&lt;&#x2F;li&gt;
+&lt;li&gt;Game development (difficulty scaling)&lt;&#x2F;li&gt;
+&lt;li&gt;Network packet routing (finding optimal paths)&lt;&#x2F;li&gt;
+&lt;li&gt;Machine learning model tuning&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;Conclusion&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The next time you encounter a problem that involves finding a position where some property changes, remember: binary search isn&#x27;t just for finding values - it&#x27;s for finding boundaries. This mental model will help you recognize and solve a much wider range of problems efficiently.&lt;&#x2F;p&gt;
+&lt;p&gt;Remember the key insight: any problem that can be framed as finding the point where a boolean condition changes from False to True in a monotonic sequence can be solved using binary search.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
