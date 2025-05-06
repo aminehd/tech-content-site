@@ -1,5 +1,5 @@
 +++
-title = "Binary search as patitioning based on condtion change"
+title = "Binary search as partitioning based on condition change"
 date = "2024-07-09"
 
 [taxonomies]
